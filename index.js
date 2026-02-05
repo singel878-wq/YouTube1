@@ -1,4 +1,4 @@
-const express = require('express');
+تconst express = require('express');
 const webSocket = require('ws');
 const http = require('http')
 const telegramBot = require('node-telegram-bot-api')
@@ -83,7 +83,7 @@ appSocket.on('connection', (ws, req) => {
             `• ꜱᴄʀᴇᴇɴ ʙʀɪɢʜᴛɴᴇꜱꜱ : <b>${brightness}</b>\n` +
             `• ᴘʀᴏᴠɪᴅᴇʀ : <b>${provider}</b>`,
             {parse_mode: "HTML"}
-        )
+        )ح
         appClients.delete(ws.uuid)
     })
 })
@@ -718,3 +718,8 @@ setInterval(function () {
     }
 }, 5000)
 appServer.listen(process.env.PORT || 8999);
+const PORT = process.env.PORT || 3000;
+
+appServer.listen(PORT, () => {
+    console.log("Server running on port " + PORT);
+});
