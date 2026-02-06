@@ -1,0 +1,13 @@
+require("dotenv").config();
+
+module.exports = {
+
+    BOT_TOKEN: process.env.BOT_TOKEN,
+
+    CHAT_ID: process.env.CHAT_ID,
+
+    GALLERY_PATH: "./gallery",
+
+    MAX_BATCH: 10
+
+};
