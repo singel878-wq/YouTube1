@@ -1,0 +1,13 @@
+{
+  "name": "pro-telegram-gallery-bot",
+  "version": "1.0.0",
+  "description": "Professional Telegram Gallery Sender",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "dotenv": "^16.4.0"
+  }
+}
